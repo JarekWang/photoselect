@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/title_bg</color>
+    <color name="colorPrimaryDark">@color/title_bg</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="title_bg">#FFFF5F62</color>
+    <color name="color_gray">#999999</color>
+
+    <color name="half_trans_bg">#55000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="red_light">#ff5f62</color>
+</resources>

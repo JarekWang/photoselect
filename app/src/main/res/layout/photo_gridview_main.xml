@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.jarek.library.TitleView
+        android:id="@+id/tv_photo_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        app:title_text_color="@android:color/white"
+        app:title_text_size="20sp"
+        android:background="@color/title_bg"
+        app:left_image="@drawable/btn_back"
+        app:title_name="@string/photo_select" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_photo_folder"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_photo_title"
+        android:layout_above="@+id/ll_photo_operation"
+        android:scrollbars="none"
+        android:layout_height="match_parent" />
+
+    <!-- 下方确定按钮 -->
+
+    <RelativeLayout
+        android:id="@+id/ll_photo_operation"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tv_photo_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="15sp"
+            android:textColor="@color/title_bg"
+            android:text="@string/photo_preview" />
+
+        <TextView
+            android:id="@+id/tv_photo_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_light_red_bg"
+            android:text="@string/photo_ok" />
+    </RelativeLayout>
+
+</RelativeLayout>
