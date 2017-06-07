@@ -28,4 +28,14 @@
 ```
 
 <br>
+
+有反应内存溢出的，一直没时间来改，有的朋友已经讲了，在onDestory里需要把注入的观察者对象移除就Ok了
+```java
+  ImageSelectObservable.getInstance().deleteObserver(this);
+```
+
+<br>
+    另外项目里没有加权限申请，更新到23以后SDK需要自己加上权限申请。
+
+<br><br>
 [我的博客](http://www.cnblogs.com/jarek/)

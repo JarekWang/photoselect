@@ -102,6 +102,7 @@ public class ImageSelectActivity extends Activity implements Callback, OnClickLi
     @Override
     protected void onDestroy() {
         ImageLoader.getInstance().clearMemoryCache();
+        ImageSelectObservable.getInstance().deleteObserver(this);
         super.onDestroy();
     }
 
