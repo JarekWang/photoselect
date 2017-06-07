@@ -36,6 +36,6 @@
 
 <br>
     另外项目里没有加权限申请，更新到23以后SDK需要自己加上权限申请。
-
+<br>有朋友讲ImageLoader初始化有bug,需要context,这个已经在Application里初始化过，已经传入context,应该 是不需要再次传入context的
 <br><br>
 [我的博客](http://www.cnblogs.com/jarek/)
